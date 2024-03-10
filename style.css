@@ -1,0 +1,81 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1vw 2vw 3vw 2vw;
+    background-color: #f2f2f2;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 1vw 3vw 3vw 3vw;
+    background-color: #ffffff;
+}
+
+.barra-navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4vw;
+    border-bottom: solid 1px #f2f2f2;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+}
+
+.titulo-logo-inicio {
+    color: #f2b49b;
+}
+
+.titulo-logo-fim {
+    color: #b1765e;
+}
+
+.logo {
+    width: 2.2vw;
+    height: 2.2vw;
+}
+
+.perfil-icon {
+    width: 1.5vw;
+}
+
+.titulo-principal {
+    flex-direction: column;
+}
+
+.pesquisa{
+
+}
+
+.pesquisa-input{
+    width: 20vw;
+    height: 4vh;
+}
+
+.pesquisa-botao{
+    width: 5vw;
+    height: 4.6vh;
+}
+
+.imagem-principal{
+
+}
+
+.pre-req{
+}
+
+.conteudo-principal {
+}
+
+.rodape{
+    border-top: solid 1px #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
