@@ -1,93 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="icon" href="./assets/focus-logo.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Focus</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <nav class="barra-navegacao">
-            <div class="titulo">
-                <img class="logo" src="./assets/logo.png" alt="logo">
-                <h2 class="titulo-logo-inicio">Foc</h2>
-                <h2 class="titulo-logo-fim">us</h2>
-            </div>
-            <div class="perfil">
-                <img class="perfil-icon" src="./assets/perfil.png" alt="perfil">
-            </div>
-        </nav>
-        <div class="titulo-principal center">
-            <h1>Manual de git para iniciantes</h1>
-            <div class="pesquisa center">
-                <input class="pesquisa-input" type="text" placeholder="Digite para qual sessão você deseja ir">
-                <button class="pesquisa-botao">Pesquisar</button>
-            </div>
+      <nav class="barra-navegacao">
+        <div class="titulo">
+          <img class="logo" src="./assets/focus-logo.png" alt="logo" />
+          <h2 class="titulo-logo-inicio">Foc</h2>
+          <h2 class="titulo-logo-fim">us</h2>
         </div>
-        <div class="imagem-principal center">
-            <img src="./assets/imagem-principal.webp" alt="imagem-principal">
+        <div class="perfil">
+          <img class="perfil-icon" src="./assets/perfil.png" alt="perfil" />
         </div>
+      </nav>
+      <div class="titulo-principal center">
+        <h1>Bem-vindo ao Focus!</h1>
 
-        <div class="pre-req">
-            <h2>Pré-requisitos</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into
-                electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of
-                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-                Aldus
-                PageMaker including versions of Lorem Ipsum.</p>
+        <div class="pesquisa center">
+          <input
+            class="pesquisa-input"
+            type="text"
+            placeholder="Digite para qual sessão você deseja ir"
+          />
+          <button class="pesquisa-botao">Pesquisar</button>
         </div>
+      </div>
+      <div class="imagem-principal center">
+        <img src="./assets/imagem-principal.webp" alt="imagem-principal" />
+      </div>
+      <div class="titulo-bem-vindo">
+        <h2>Manual de git para iniciantes</h2>
+      </div>
+      <div class="bem-vindo">
+        <h2>GitHub para todos: Aprenda de forma simples e intuitiva!</h2>
+        <p>
+          Este conteúdo foi desenvolvido para ajudar os apaixonados por
+          tecnologia a aprender os poderosos conceitos e comandos para
+          utilização do GitHub. Inicialmente, vamos falar um pouco sobre Sistema
+          de Controle de Versão, que permite manter versões de arquivos,
+          reverter para versões anteriores, monitorar quem fez alterações e
+          gerenciar o desenvolvimento de um sistema por uma equipe, e pode ser
+          composta por dezenas de pessoas.
+        </p>
+        <p>
+          O Git é o mais popular Sistema de Controle de Versão do mundo, além
+          disso, o Git é um software livre, distribuído sob os termos da versão
+          2 da GNU General Public License. Já o GitHub é um popular repositório
+          remoto, que contém milhões de projetos, muitos deles públicos. Neste
+          site você vai aprender os principais fundamentos de Git e GitHub.
+        </p>
+      </div>
+      <div class="pre-req">
+        <h2>Git e Github</h2>
+        <p>
+          Se você é dev ou está considerando entrar na área da tecnologia, é
+          provável que já tenha se deparado com o termo <b>"Git e Github"</b>.
+          São ferramentas distintas, mas colaboram de maneira integrada para
+          tornar o desenvolvimento de software mais eficiente.
+        </p>
+        <p>
+          <strong>Git</strong> é um sistema de controle de versão de arquivos;
+          em outras palavras, é responsável por guardar o histórico de
+          alterações sempre que alguém modificar algum arquivo que está sendo
+          monitorado por ele.
+        </p>
+        <p>
+          <strong>Github</strong> é uma “rede social dev” em que é possível
+          armazenar e compartilhar projetos de desenvolvimento de software.
+        </p>
+        <br />
+        <h2>Pré-requisitos: Baixar e Instalar</h2>
+        <p>
+          Para utilizar o Git, você pode seguir esse passo a passo de como fazer
+          o download e instalar para cada sistema operacional:
+        </p>
+        <p><b>Windows</b></p>
+        <ol>
+          <li>
+            Acesse o site oficial do Git em link
+            <a href="https://git-scm.com/download/win" target="_blank"
+              >git-scm.com/download</a
+            >
+          </li>
+          <li>Clique no link para download do Git para Windows.</li>
+          <li>Após o download, execute o instalador.</li>
+          <li>
+            Siga as instruções do instalador, aceitando as configurações padrão,
+            se não for um usuário avançado.
+          </li>
+          <li>Conclua a instalação.</li>
+        </ol>
 
-        <main class="conteudo-principal">
-            <h2>Passo a passo</h2>
-            <ol>
-                <section>
-                    <li>
-                        <b>Lorem Ipsum is simply dummy</b><br> Qui dignissimos minima aut ipsum internos qui saepe
-                        voluptatibus ut sapiente odit aut quia praesentium qui voluptas dolorem. Sit possimus neque eos
-                        doloremque quas aut aliquam reiciendis et quos animi aut saepe nisi qui facilis quidem!
-                    </li>
-                </section>
-                <section>
-                    <li>
-                        <b>Letraset sheets containing</b><br> Lorem Ipsum passages, and more recently with desktop
-                        publishing
-                        software like
-                        Aldus
-                    </li>
-                </section>
-                <section>
-                    <li>
-                        <b>Eos dolorem quia et</b><br> libero praesentium non quia natus. Et harum animi ut maxime
-                        inventore
-                        cum
-                        eius ipsa! Eos illo quidem qui omnis quaerat est quasi voluptas aut voluptatibus velit sit totam
-                        error eum ratione aperiam. Hic nobis velit ea pariatur velit qui impedit aliquid qui p
-                    </li>
-                </section>
-            </ol>
+        <p><b>macOS</b></p>
+        <ol>
+          <li>
+            No macOS, o Git pode ser instalado de várias maneiras, incluindo o
+            uso do Xcode Command Line Tools, que geralmente já está instalado no
+            sistema.
+          </li>
+          <li>
+            Abra o Terminal e digite git --version para verificar se o Git está
+            disponível. Se não estiver, o sistema solicitará a instalação.
+          </li>
+          <li>
+            Siga as instruções para instalar o Git. Com esses passos simples,
+            você pode instalar o Git no seu sistema operacional.
+          </li>
+        </ol>
+      </div>
 
-            <footer class="rodape">
-                <div class="email">
-                    <p>icon-email</p>
-                </div>
-                <div class="telefone">
-                    <p>icon-telefone</p>
-                </div>
-                <div class="linkedin">
-                    <p>icon-linkedin</p>
-                </div>
-            </footer>
-        </main>
+      <main class="conteudo-principal">
+        <h2>Passo a Passo</h2>
+        <ol>
+          <section>
+            <li><b>Passo: Crie um repositório</b></li>
+            <p>
+              Acesse o GitHub e crie um novo repositório público, conforme
+              imagem abaixo:
+            </p>
+            <img src="./assets/repo_img.jpg" alt="img passo 1" />
+          </section>
+          <br />
+
+          <section>
+            <li>
+              <b>Passo: Clone o repositório</b>
+              <p>
+                Através do um terminal, vá até a pasta onde deseja armazenar seu
+                projeto e clone o novo repositório:
+              </p>
+              <img src="./assets/passo.2.jpg" alt="img passo 2" width="700" />
+            </li>
+          </section>
+
+          <section>
+            <br />
+            <li><b>Passo: Olá Mundo!</b></li>
+            <p>Entre na pasta do projeto e adicione um arquivo index.html:</p>
+            <img src="./assets/passo.3.jpg" alt="img passo 3" width="700" />
+          </section>
+          <br />
+
+          <section>
+            <li>
+              <b>Passo: Push it </b>
+              <p>Adicione, confirme e envie as suas alterações:</p>
+            </li>
+            <img src="./assets/passo.4.jpg" alt="img passo 4" width="700" />
+          </section>
+        </ol>
+
+        <h4>… e PRONTO!</h4>
+
+        <p>Abra um navegador e vá para o seu perfil do GitHub.</p>
+        <br />
+
+        <h2>Mas quais são as vantagens de utilizar o Git em seus projetos?</h2>
+
+        <p>Dentre os principais benefícios em utilizar Git, podemos citar:</p>
+
+        <ul>
+          <li>
+            Manter o histórico das alterações que são realizadas no código;
+          </li>
+          <li>
+            Permite rastrear cada alteração realizada no código;
+          </li>
+          <li>
+            Simplificar e possibilitar o trabalho simultâneo entre as equipes;
+          </li>
+          <li>
+            Permite criar ramificações, onde é possível criar alterações de
+            forma isolada no código.
+          </li>
+        </ul>
+        
+        <br />
+
+        <h2>Comandos básicos do Git</h2>
+        <br />
+
+        <b>git help</b>
+        <p>
+          Exibe as informações de ajuda sobre git e pode ser utilizado quando
+          você tiver dúvidas ou esquecer de algum comando.
+        </p>
+        <br />
+
+        <b>git config</b>
+        <p>
+          Permite ver e atribuir variáveis de configuração do git, geralmente
+          utilizado quando você precisa iniciar a configuração do GIT ou para
+          consultar quais são suas configurações atuais.
+        </p>
+        <br />
+
+        <b>git init</b>
+        <p>
+          Este comando pode ser utilizado para criar um novo repositório do Git
+          ou para transformar um diretório em um repositório do Git.
+        </p>
+        <br />
+
+        <b>git clone</b>
+        <p>
+          Permite clonar um repositório existente. Clonar é basicamente extrair
+          uma cópia completa de todos os dados de um repositório para seu
+          diretório.
+        </p>
+        <br />
+
+        <b>git add</b>
+        <p>
+          Para adicionar algo que foi modificado ou criado, pode ser utilizado
+          para adicionar arquivos e diretórios.
+        </p>
+        <br />
+
+        <b>git rm</b>
+        <p>Para remover arquivos ou diretórios de um repositório.</p>
+        <br />
+
+        <b>git commit</b>
+        <p>
+          Para gravar as alterações do que foi modificado, adicionado ou
+          removido.
+        </p>
+        <br />
+
+        <b>git status </b>
+        <p>
+          Exibe uma lista dos arquivos e diretórios que foram modificados e
+          adicionados no repositório.
+        </p>
+        <br />
+
+        <b>git diff </b>
+        <p>
+          Pode ser utilizado para visualizarmos as alterações efetuadas em cada
+          um dos arquivos modificados.
+        </p>
+        <br />
+
+        <b>git checkout </b>
+        <p>
+          Permite alternar entre os branchs existentes e também resetar arquivos
+          que foram modificados.
+        </p>
+        <br />
+
+        <b>git branch </b>
+        <p>
+          Para gerenciar os branchs. Possibilita criar novos branchs, listar
+          todos existentes e removê-los.
+        </p>
+        <br />
+
+        <b>git pull</b>
+        <p>
+          Este comando mescla as alterações do repositório remoto para o seu
+          repositório local, ou seja, ele traz todas as modificações que foram
+          efetuadas.
+        </p>
+        <br />
+
+        <b>git push </b>
+        <p>
+          Este comando envia as alterações do seu repositório local para o
+          repositório remoto, conforme a branch que está sendo utilizada.
+        </p>
+        <br />
+
+        <b>git log </b>
+        <p>
+          Exibe os logs dos commits efetuados. Este comando disponibiliza
+          diversos parâmetros para detalhar os logs, permitindo visualizar
+          exatamente o que você desejar.
+        </p>
+        <br />
+
+        <h2>ATENÇÃO!</h2>
+
+        <img src="./assets/img-atencao-1.png" alt="img atenção 1" width="800" />
+        <br />
+        <br />
+        <img src="./assets/img-atencao-2.png" alt="img atenção 2" width="800" />
+
+        <br />
+        <h2>CHEGOU A HORA DA VERDADE!</h2>
+        <p>Para sabermos se você aprendeu direitinho, vamos jogar um Quiz?</p>
+
+        <br>
+        <footer class="rodape">
+          <div class="email">
+            <p><b>E-mail para contato: </b></p>
+            <p>mecias1319@uorak.com</p>
+          </div>
+
+          <div class="telefone">
+            <p><b>Telefone para contato: </b></p>
+            <p>(83) 2101-8877</p>
+          </div>
+      
+        </footer>
+      </main>
     </div>
-
-</body>
-
+  </body>
 </html>
