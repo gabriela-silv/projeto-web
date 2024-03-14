@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <link rel="icon" href="./assets/focus-logo.png" />
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Focus</title>
     <link rel="stylesheet" href="style.css" />
@@ -13,9 +13,34 @@
       <nav class="barra-navegacao">
         <div class="titulo">
           <img class="logo" src="./assets/focus-logo.png" alt="logo" />
+
           <h2 class="titulo-logo-inicio">Foc</h2>
           <h2 class="titulo-logo-fim">us</h2>
         </div>
+
+          <div class="menu-navegacao">
+            <div class="menu-git">
+              <div onclick="location.href='#sessao1'" class="sessao-navegacao" style="cursor:pointer"><h4>Git e GitHub| </h4></div>
+            </div>
+
+            <div class="menu-requisitots">
+              <a onclick="location.href='#sessao2'" class="sessao-navegacao" ><h4> Pré-requisitos| </h4></a>
+            </div>
+            
+            <div class="menu-passo">
+              <a onclick="location.href='#sessao3'" class="sessao-navegacao"> <h4> Passo a Passo| </h4></a>
+            </div>
+
+            <div class="menu-comandos">
+              <a onclick="location.href='#sessao4'" class="sessao-navegacao"> <h4> Comandos| </h4></a>
+            </div>
+
+            <div class="menu-quiz">
+              <a onclick="location.href='#sessao5'" class="sessao-navegacao"> <h4> Quiz</h4></a>
+            </div>
+        </div>
+          
+        
         <div class="perfil">
           <img class="perfil-icon" src="./assets/perfil.png" alt="perfil" />
         </div>
@@ -35,9 +60,11 @@
       <div class="imagem-principal center">
         <img src="./assets/imagem-principal.webp" alt="imagem-principal" />
       </div>
+
       <div class="titulo-bem-vindo">
         <h2>Manual de git para iniciantes</h2>
       </div>
+
       <div class="bem-vindo">
         <h2>GitHub para todos: Aprenda de forma simples e intuitiva!</h2>
         <p>
@@ -56,27 +83,49 @@
           remoto, que contém milhões de projetos, muitos deles públicos. Neste
           site você vai aprender os principais fundamentos de Git e GitHub.
         </p>
+
+        <p>Visualize aqui: </p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xEKo29OWILE?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA" title="O que é Git? O que é versionamento? - Curso de Git e GitHub" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
       </div>
       <div class="pre-req">
-        <h2>Git e Github</h2>
+        <h2 id="sessao1">Git e Github</h2>
+
         <p>
           Se você é dev ou está considerando entrar na área da tecnologia, é
           provável que já tenha se deparado com o termo <b>"Git e Github"</b>.
           São ferramentas distintas, mas colaboram de maneira integrada para
           tornar o desenvolvimento de software mais eficiente.
         </p>
-        <p>
-          <strong>Git</strong> é um sistema de controle de versão de arquivos;
-          em outras palavras, é responsável por guardar o histórico de
-          alterações sempre que alguém modificar algum arquivo que está sendo
-          monitorado por ele.
-        </p>
-        <p>
-          <strong>Github</strong> é uma “rede social dev” em que é possível
-          armazenar e compartilhar projetos de desenvolvimento de software.
-        </p>
+
+        <table border="2">
+          <thead>
+            <tr>
+              <th>Ferramenta</th>
+              <th>Definição</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><b>Git</b></td>
+              <td>É um sistema de controle de versão de arquivos; em outras palavras, é responsável por guardar o histórico de alterações sempre que alguém modificar algum arquivo que está sendo monitorado por ele.</td>
+            </tr>
+
+            <tr>
+              <td><b>Git Hub</b></td>
+              <td>É uma “rede social dev” em que é possível armazenar e compartilhar projetos de desenvolvimento de software.</td>
+            </tr>
+          </tbody>
+        </table>
+      
+
+        <p>Visualize aqui: </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DqTITcMq68k" title="O QUE É GIT E GITHUB? - definição e conceitos importantes 1/2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <br />
-        <h2>Pré-requisitos: Baixar e Instalar</h2>
+
+        <h2 id="sessao2">Pré-requisitos: Baixar e Instalar</h2>
         <p>
           Para utilizar o Git, você pode seguir esse passo a passo de como fazer
           o download e instalar para cada sistema operacional:
@@ -114,10 +163,15 @@
             você pode instalar o Git no seu sistema operacional.
           </li>
         </ol>
+
+        <p>Visualize aqui: </p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Am46OOLgV4s?si=UlwF5ff0PmMR5o0-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          
       </div>
 
       <main class="conteudo-principal">
-        <h2>Passo a Passo</h2>
+        <h2 id="sessao3">Passo a Passo</h2>
         <ol>
           <section>
             <li><b>Passo: Crie um repositório</b></li>
@@ -138,7 +192,7 @@
               </p>
               <img src="./assets/passo.2.jpg" alt="img passo 2" width="700" />
             </li>
-          </section>
+            </section>
 
           <section>
             <br />
@@ -160,131 +214,108 @@
         <h4>… e PRONTO!</h4>
 
         <p>Abra um navegador e vá para o seu perfil do GitHub.</p>
-        <br />
+        
+        
+        <p>Visualize aqui: </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UBAX-13g8OM" title="COMO USAR GIT E GITHUB NA PRÁTICA! - desde o primeiro commit até o pull request! 2/2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
         <h2>Mas quais são as vantagens de utilizar o Git em seus projetos?</h2>
 
-        <p>Dentre os principais benefícios em utilizar Git, podemos citar:</p>
+        <p id="sessao4">Dentre os principais benefícios em utilizar Git, podemos citar:</p>
 
-        <ul>
-          <li>
-            Manter o histórico das alterações que são realizadas no código;
-          </li>
-          <li>
-            Permite rastrear cada alteração realizada no código;
-          </li>
-          <li>
-            Simplificar e possibilitar o trabalho simultâneo entre as equipes;
-          </li>
-          <li>
-            Permite criar ramificações, onde é possível criar alterações de
-            forma isolada no código.
-          </li>
-        </ul>
-        
-        <br />
+        <table border="2">
+          <thead>
+            <tr>
+              <th>Comando</th>
+              <th>Descrição</th>
+            </tr>
+          </thead>
 
-        <h2>Comandos básicos do Git</h2>
-        <br />
+          <tbody>
+            <tr>
+              <td><b>git help</b></td>
+              <td>Exibe as informações de ajuda sobre git e pode ser utilizado quando
+                você tiver dúvidas ou esquecer de algum comando.</td>
+            </tr>
 
-        <b>git help</b>
-        <p>
-          Exibe as informações de ajuda sobre git e pode ser utilizado quando
-          você tiver dúvidas ou esquecer de algum comando.
-        </p>
-        <br />
+            <tr>
+              <td><b>git init</b></td>
+              <td>Este comando pode ser utilizado para criar um novo repositório do Git
+                ou para transformar um diretório em um repositório do Git.</td>
+            </tr>
 
-        <b>git config</b>
-        <p>
-          Permite ver e atribuir variáveis de configuração do git, geralmente
-          utilizado quando você precisa iniciar a configuração do GIT ou para
-          consultar quais são suas configurações atuais.
-        </p>
-        <br />
+            <tr>
+              <td><b>git clone</b></td>
+              <td>Permite clonar um repositório existente. Clonar é basicamente extrair
+                uma cópia completa de todos os dados de um repositório para seu
+                diretório.</td>
+            </tr>
 
-        <b>git init</b>
-        <p>
-          Este comando pode ser utilizado para criar um novo repositório do Git
-          ou para transformar um diretório em um repositório do Git.
-        </p>
-        <br />
+            <tr>
+              <td><b>git add</b></td>
+              <td>Para adicionar algo que foi modificado ou criado, pode ser utilizado
+                para adicionar arquivos e diretórios.</td>
+            </tr>
 
-        <b>git clone</b>
-        <p>
-          Permite clonar um repositório existente. Clonar é basicamente extrair
-          uma cópia completa de todos os dados de um repositório para seu
-          diretório.
-        </p>
-        <br />
+            <tr>
+              <td><b>git rm</b></td>
+              <td>Para remover arquivos ou diretórios de um repositório.</td>
+            </tr>
 
-        <b>git add</b>
-        <p>
-          Para adicionar algo que foi modificado ou criado, pode ser utilizado
-          para adicionar arquivos e diretórios.
-        </p>
-        <br />
+            <tr>
+              <td><b>git commit</b></td>
+              <td>Para gravar as alterações do que foi modificado, adicionado ou
+                removido.</td>
+            </tr>
 
-        <b>git rm</b>
-        <p>Para remover arquivos ou diretórios de um repositório.</p>
-        <br />
+            <tr>
+              <td><b>git status</b></td>
+              <td>Exibe uma lista dos arquivos e diretórios que foram modificados e
+                adicionados no repositório.</td>
+            </tr>
 
-        <b>git commit</b>
-        <p>
-          Para gravar as alterações do que foi modificado, adicionado ou
-          removido.
-        </p>
-        <br />
+            <tr>
+              <td><b>git diff</b></td>
+              <td>Pode ser utilizado para visualizarmos as alterações efetuadas em cada
+                um dos arquivos modificados.</td>
+            </tr>
 
-        <b>git status </b>
-        <p>
-          Exibe uma lista dos arquivos e diretórios que foram modificados e
-          adicionados no repositório.
-        </p>
-        <br />
 
-        <b>git diff </b>
-        <p>
-          Pode ser utilizado para visualizarmos as alterações efetuadas em cada
-          um dos arquivos modificados.
-        </p>
-        <br />
+            <tr>
+              <td><b>git checkout</b></td>
+              <td>Permite alternar entre os branchs existentes e também resetar arquivos
+                que foram modificados.</td>
+            </tr>
 
-        <b>git checkout </b>
-        <p>
-          Permite alternar entre os branchs existentes e também resetar arquivos
-          que foram modificados.
-        </p>
-        <br />
+            <tr>
+              <td><b>git branch</b></td>
+              <td>Para gerenciar os branchs. Possibilita criar novos branchs, listar
+                todos existentes e removê-los.</td>
+            </tr>
 
-        <b>git branch </b>
-        <p>
-          Para gerenciar os branchs. Possibilita criar novos branchs, listar
-          todos existentes e removê-los.
-        </p>
-        <br />
+            <tr>
+              <td><b>git pull</b></td>
+              <td>Este comando mescla as alterações do repositório remoto para o seu
+                repositório local, ou seja, ele traz todas as modificações que foram
+                efetuadas.</td>
+            </tr>
 
-        <b>git pull</b>
-        <p>
-          Este comando mescla as alterações do repositório remoto para o seu
-          repositório local, ou seja, ele traz todas as modificações que foram
-          efetuadas.
-        </p>
-        <br />
+            <tr>
+              <td><b>git push</b></td>
+              <td>Este comando envia as alterações do seu repositório local para o
+                repositório remoto, conforme a branch que está sendo utilizada.</td>
+            </tr>
 
-        <b>git push </b>
-        <p>
-          Este comando envia as alterações do seu repositório local para o
-          repositório remoto, conforme a branch que está sendo utilizada.
-        </p>
-        <br />
+            <tr>
+              <td><b>git log</b></td>
+              <td>Exibe os logs dos commits efetuados. Este comando disponibiliza
+                diversos parâmetros para detalhar os logs, permitindo visualizar
+                exatamente o que você desejar.</td>
+            </tr>
 
-        <b>git log </b>
-        <p>
-          Exibe os logs dos commits efetuados. Este comando disponibiliza
-          diversos parâmetros para detalhar os logs, permitindo visualizar
-          exatamente o que você desejar.
-        </p>
-        <br />
+          </tbody>
+        </table>
+
 
         <h2>ATENÇÃO!</h2>
 
@@ -293,9 +324,29 @@
         <br />
         <img src="./assets/img-atencao-2.png" alt="img atenção 2" width="800" />
 
+        <p>Visualize aqui: </p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gcOhd8rvBOc" title="GIT BRANCH E GIT MERGE - Git e GitHub #03" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
         <br />
-        <h2>CHEGOU A HORA DA VERDADE!</h2>
+        <h2 id="sessao5">CHEGOU A HORA DA VERDADE!</h2>
         <p>Para sabermos se você aprendeu direitinho, vamos jogar um Quiz?</p>
+
+        <h2 id="sessao5">Comentários</h2>
+        <form class="comentarios" action="" method="post">
+          <div class="input-display">
+            <p>Nome:</p> <input class="input-form" type="text" name=nome placeholder="Digite aqui seu nome"/>
+          </div>
+          <div class="input-display">
+            <p>Email:</p> <input class="input-form" type="text" name=nome placeholder="Digite aqui seu email"/>
+          </div>
+          <div class="input-display">
+            <p>Comentário:</p> <textarea name="comentario" id="" cols="50" rows="5" placeholder="Digite aqui seu comentário"></textarea>
+          </div>
+          <div class="input-display">
+            <input class="botao-enviar" type="submit" value="enviar">
+          </div>
+        </form>
 
         <br>
         <footer class="rodape">

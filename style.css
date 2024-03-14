@@ -79,3 +79,57 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
+table tr:nth-child(2n+2) {
+    background-color: #d5d1d1;
+}
+
+table thead:first-child{
+    background-color: #ffffff;
+}
+
+.menu-navegacao{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-direction: row;
+    align-items: center;;
+}
+
+.menu-navegacao-2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.sessao-navegacao{
+    cursor: pointer;
+}
+
+table th{
+    background-color: #d5d1d1;
+}
+
+.titulo-bem-vindo{
+    text-align: center;
+}
+
+.comentarios{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-display{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input-form{
+    height: 5vh;
+}
+
+.botao-enviar{
+    height: 2vw;
+    width: 4vw;
+}
