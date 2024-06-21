@@ -18,43 +18,25 @@
           <h2 class="titulo-logo-fim">us</h2>
         </div>
 
-          <div class="menu-navegacao">
-            <div class="menu-git">
-              <div onclick="location.href='#sessao1'" class="sessao-navegacao" style="cursor:pointer"><h4>Git e GitHub| </h4></div>
-            </div>
-
-            <div class="menu-requisitots">
-              <a onclick="location.href='#sessao2'" class="sessao-navegacao" ><h4> Pré-requisitos| </h4></a>
-            </div>
-            
-            <div class="menu-passo">
-              <a onclick="location.href='#sessao3'" class="sessao-navegacao"> <h4> Passo a Passo| </h4></a>
-            </div>
-
-            <div class="menu-comandos">
-              <a onclick="location.href='#sessao4'" class="sessao-navegacao"> <h4> Comandos| </h4></a>
-            </div>
-
-            <div class="menu-quiz">
-              <a onclick="location.href='#sessao5'" class="sessao-navegacao"> <h4> Quiz</h4></a>
-            </div>
-        </div>
-          
-        
-        <div class="perfil">
-          <img class="perfil-icon" src="./assets/perfil.png" alt="perfil" />
-        </div>
+        <section id="sessao1">Git e GitHub</section>
+        <section id="sessao2">Pré-requisitos</section>
+        <section id="sessao3">Passo a Passo</section>
+        <section id="sessao4">Comandos</section>
+        <section id="sessao5">Quiz</section>
+  
       </nav>
       <div class="titulo-principal center">
         <h1>Bem-vindo ao Focus!</h1>
 
         <div class="pesquisa center">
-          <input
-            class="pesquisa-input"
-            type="text"
-            placeholder="Digite para qual sessão você deseja ir"
-          />
-          <button class="pesquisa-botao">Pesquisar</button>
+
+          <input type="text" class="pesquisa-input" placeholder="Digite sua pesquisa...">
+          <button class="pesquisa-botao">Buscar</button>
+          
+          <script>
+            searchSession();
+        </script>
+        
         </div>
       </div>
       <div class="imagem-principal center">
@@ -84,16 +66,6 @@
           site você vai aprender os principais fundamentos de Git e GitHub.
         </p>
 
-        <p>Ouça a introdução!</p>
-
-        <audio autoplay="autoplay" controls="controls">
-          <source src="assets/p_17623959_889.mp3" type="audio/mp3" />
-          aúdio.
-          </audio>
-
-        <p>Visualize aqui: </p>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/xEKo29OWILE?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA" title="O que é Git? O que é versionamento? - Curso de Git e GitHub" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
       </div>
       <div class="pre-req">
@@ -127,16 +99,6 @@
           </tbody>
         </table>
 
-        <p>Ouça a definição!</p>
-
-        <audio autoplay="autoplay" controls="controls">
-          <source src="assets/p_17624192_180.mp3" type="audio/mp3" />
-          aúdio.
-          </audio>
-      
-
-        <p>Visualize aqui: </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/DqTITcMq68k" title="O QUE É GIT E GITHUB? - definição e conceitos importantes 1/2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <br />
 
         <h2 id="sessao2">Pré-requisitos: Baixar e Instalar</h2>
@@ -178,9 +140,6 @@
           </li>
         </ol>
 
-        <p>Visualize aqui: </p>
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Am46OOLgV4s?si=UlwF5ff0PmMR5o0-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           
       </div>
 
@@ -228,19 +187,6 @@
         <h4>… e PRONTO!</h4>
 
         <p>Abra um navegador e vá para o seu perfil do GitHub.</p>
-
-        <p>Ouça o passo a passo!</p>
-        
-        <audio autoplay="autoplay" controls="controls">
-          <source src="assets/p_17624371_403.mp3" type="audio/mp3" />
-          aúdio.
-          </audio>
-
-
-        
-        
-        <p>Visualize aqui: </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/UBAX-13g8OM" title="COMO USAR GIT E GITHUB NA PRÁTICA! - desde o primeiro commit até o pull request! 2/2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
         <h2>Mas quais são as vantagens de utilizar o Git em seus projetos?</h2>
 
@@ -347,10 +293,7 @@
         <br />
         <img src="./assets/img-atencao-2.png" alt="img atenção 2" width="800" />
 
-        <p>Visualize aqui: </p>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/gcOhd8rvBOc" title="GIT BRANCH E GIT MERGE - Git e GitHub #03" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+  
         <br />
         <h2 id="sessao5">CHEGOU A HORA DA VERDADE!</h2>
         <p>Para sabermos se você aprendeu direitinho, vamos jogar um Quiz?</p>
@@ -386,5 +329,6 @@
         </footer>
       </main>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

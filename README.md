@@ -1,5 +1,5 @@
 # projeto-web
-Projeto para a disciplina de Web Front-end.
+Projeto para a disciplina de JavaScript.
 
 O projeto consiste em desenvolver um web site voltado para a área da educação em Tecnologia da Informação. O tema escolhido para o ensino foi: "Git e GitHub". 
 
