@@ -1,20 +1,19 @@
 // Função de pesquisa nas sessões
-function searchSession() {
-    const input = document.querySelector('.pesquisa-input');
-    const button = document.querySelector('.pesquisa-botao');
+document.addEventListener('DOMContentLoaded', () => {
+    const select = document.getElementById('section-select');
 
-    button.addEventListener('click', () => {
-        const query = input.value.toLowerCase();
-        const sections = ['git e github', 'pré-requisitos', 'passo a passo', 'comandos', 'quiz'];
-
-        sections.forEach((section, index) => {
-            if (section.includes(query)) {
-                location.href = `#sessao${index + 1}`;
+    select.addEventListener('change', () => {
+        const selectedSection = select.value;
+        if (selectedSection) {
+            const sectionElement = document.getElementById(selectedSection);
+            if (sectionElement) {
+                sectionElement.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                console.error('Seção não encontrada:', selectedSection);
             }
-        });
+        }
     });
-}
-
+});
 
 // Função para adicionar um novo comentário
 function addComment() {
@@ -26,49 +25,68 @@ function addComment() {
         const comment = event.target.comentario.value;
 
         const commentSection = document.createElement('div');
+        commentSection.classList.add('comment');
         commentSection.innerHTML = `
             <p><strong>${name}</strong> (${email})</p>
             <p>${comment}</p>
         `;
-        document.body.appendChild(commentSection);
+        document.getElementById('commentSection').appendChild(commentSection);
+
+        // Limpar o formulário
+        form.reset();
     });
 }
 
-// Funções com Arrays
-function arrayFunctions() {
-    const commands = ['git init', 'git add', 'git commit', 'git push', 'git pull'];
-    // Adicionar um comando ao array
-    commands.push('git status');
-    console.log(commands);
+// Chamar a função addComment quando a página for carregada
+document.addEventListener('DOMContentLoaded', addComment);
 
-    // Remover o primeiro comando do array
-    commands.shift();
-    console.log(commands);
-
-    // Iterar sobre o array e mostrar cada comando no console
-    commands.forEach(command => console.log(command));
-}
-
-// Funções com Strings
-function stringFunctions() {
-    const sampleText = 'Bem-vindo ao Focus!';
-    // Converter o texto para letras maiúsculas
-    console.log(sampleText.toUpperCase());
-
-    // Substituir uma palavra no texto
-    console.log(sampleText.replace('Focus', 'GitHub'));
-}
 
 // Funções assíncronas
+
+// Função para buscar o perfil do GitHub
 async function fetchGitHubProfile(username) {
     try {
         const response = await fetch(`https://api.github.com/users/${username}`);
         const data = await response.json();
-        console.log(data);
+        displayProfile(data);
     } catch (error) {
         console.error('Error fetching GitHub profile:', error);
+        displayError('Error fetching GitHub profile.');
     }
 }
+
+// Função para exibir o perfil no HTML
+function displayProfile(data) {
+    const profileDiv = document.getElementById('profile');
+    if (data.message === "Not Found") {
+        profileDiv.innerHTML = '<p>User not found.</p>';
+        return;
+    }
+    profileDiv.innerHTML = `
+        <h2>${data.name} (${data.login})</h2>
+        <img src="${data.avatar_url}" alt="${data.login}'s avatar" width="150">
+        <p><strong>Bio:</strong> ${data.bio}</p>
+        <p><strong>Location:</strong> ${data.location}</p>
+        <p><strong>Public Repos:</strong> ${data.public_repos}</p>
+        <p><strong>Followers:</strong> ${data.followers}</p>
+        <p><strong>Following:</strong> ${data.following}</p>
+        <a href="${data.html_url}" target="_blank">View Profile on GitHub</a>
+    `;
+}
+
+// Função para exibir uma mensagem de erro no HTML
+function displayError(message) {
+    const profileDiv = document.getElementById('profile');
+    profileDiv.innerHTML = `<p>${message}</p>`;
+}
+
+// Adicionar um evento de submit ao formulário
+document.getElementById('github-form').addEventListener('submit', (event) => {
+    event.preventDefault();
+    const username = document.getElementById('username').value;
+    fetchGitHubProfile(username);
+});
+
 
 // Adicionando os eventos e funcionalidades na inicialização
 function init() {

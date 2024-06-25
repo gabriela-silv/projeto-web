@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Focus</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+    rel="stylesheet" />
   </head>
 
   <body>
@@ -18,27 +20,33 @@
           <h2 class="titulo-logo-fim">us</h2>
         </div>
 
-        <section id="sessao1">Git e GitHub</section>
-        <section id="sessao2">Pré-requisitos</section>
-        <section id="sessao3">Passo a Passo</section>
-        <section id="sessao4">Comandos</section>
-        <section id="sessao5">Quiz</section>
+        <div class="sections">
+        <section>Git e GitHub</section>
+        <section>Pré-requisitos</section>
+        <section>Passo a Passo</section>
+        <section>Comandos</section>
+      </div>
   
       </nav>
       <div class="titulo-principal center">
-        <h1>Bem-vindo ao Focus!</h1>
+        <h1 class="bem-vindo font-mont">Bem-vindo ao Focus!</h1>
 
-        <div class="pesquisa center">
-
-          <input type="text" class="pesquisa-input" placeholder="Digite sua pesquisa...">
-          <button class="pesquisa-botao">Buscar</button>
-          
-          <script>
-            searchSession();
-        </script>
-        
-        </div>
       </div>
+    </nav>
+
+  <div class="selecao-sessao center font-open">
+    <h3>Selecione para qual seção deseja ir: </h3>
+      <select id="section-select">
+        <option value="" disabled selected>Selecione uma seção...</option>
+        <option value="sessao1">Git e GitHub</option>
+        <option value="sessao2">Pré-requisitos</option>
+        <option value="sessao3">Passo a Passo</option>
+        <option value="sessao4">Comandos</option>
+        
+    </select>
+  </div>
+
+     
       <div class="imagem-principal center">
         <img src="./assets/imagem-principal.webp" alt="imagem-principal" />
       </div>
@@ -69,7 +77,7 @@
 
       </div>
       <div class="pre-req">
-        <h2 id="sessao1">Git e Github</h2>
+        <section id="sessao1"><b>Git e GitHub</b></section>
 
         <p>
           Se você é dev ou está considerando entrar na área da tecnologia, é
@@ -285,50 +293,60 @@
           </tbody>
         </table>
 
+        <h1>Buscar perfis no GitHub</h1>
+    <form id="github-form">
+        <label for="username">GitHub Username:</label>
+        <input type="text" id="username" name="username" required>
+        <button type="submit">Buscar perfil</button>
+    </form>
+    <div id="profile"></div>
+    
 
-        <h2>ATENÇÃO!</h2>
-
-        <img src="./assets/img-atencao-1.png" alt="img atenção 1" width="800" />
-        <br />
-        <br />
-        <img src="./assets/img-atencao-2.png" alt="img atenção 2" width="800" />
-
-  
-        <br />
-        <h2 id="sessao5">CHEGOU A HORA DA VERDADE!</h2>
-        <p>Para sabermos se você aprendeu direitinho, vamos jogar um Quiz?</p>
-
-        <h2 id="sessao5">Comentários</h2>
-        <form class="comentarios" action="" method="post">
-          <div class="input-display">
-            <p>Nome:</p> <input class="input-form" type="text" name=nome placeholder="Digite aqui seu nome"/>
-          </div>
-          <div class="input-display">
-            <p>Email:</p> <input class="input-form" type="text" name=nome placeholder="Digite aqui seu email"/>
-          </div>
-          <div class="input-display">
-            <p>Comentário:</p> <textarea name="comentario" id="" cols="50" rows="5" placeholder="Digite aqui seu comentário"></textarea>
-          </div>
-          <div class="input-display">
-            <input class="botao-enviar" type="submit" value="enviar">
-          </div>
-        </form>
-
-        <br>
-        <footer class="rodape">
-          <div class="email">
-            <p><b>E-mail para contato: </b></p>
-            <p>mecias1319@uorak.com</p>
-          </div>
-
-          <div class="telefone">
-            <p><b>Telefone para contato: </b></p>
-            <p>(83) 2101-8877</p>
-          </div>
-      
-        </footer>
-      </main>
+        <h1 class="font-mont titulo-formulario-texto">Deixe um comentário</h1>
+    <form class="comentarios">
+      <div></div>
+        <div class="cadastro">
+            <label for="nome">Nome:</label>
+            <input class="input" type="text" id="nome" name="nome" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input class="input" type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="comentario">Comentário:</label>
+            <textarea class="input" id="comentario" name="comentario" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+    <div class="comment-section" id="commentSection">
+        <p> <b>Comentários feitos por usuários: </b></p>
     </div>
+
+    <br>
+    <footer class="rodape">
+      <div class="email">
+        <p><b>E-mail para contato: </b></p>
+        <p>mecias1319@uorak.com</p>
+      </div>
+
+      <div class="telefone">
+        <p><b>Telefone para contato: </b></p>
+        <p>(83) 2101-8877</p>
+      </div>
+  
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</div>
+
+
+
+
+  </div>
+    
+
+       
     <script src="script.js"></script>
   </body>
 </html>
