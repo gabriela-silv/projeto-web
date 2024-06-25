@@ -80,13 +80,30 @@ function displayError(message) {
     profileDiv.innerHTML = `<p>${message}</p>`;
 }
 
-// Adicionar um evento de submit ao formulário
+
+//Adicionar um evento de submit ao formulário
 document.getElementById('github-form').addEventListener('submit', (event) => {
     event.preventDefault();
     const username = document.getElementById('username').value;
     fetchGitHubProfile(username);
 });
 
+
+function greetUser(name) {
+    const greetingDiv = document.getElementById('greeting');
+    greetingDiv.innerHTML = `Hello, ${name}!`;
+}
+
+module.exports = { greetUser };
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.getElementById('greetButton');
+    button.addEventListener('click', () => {
+        const username = document.getElementById('username').value;
+        greetUser(username);
+    });
+});
 
 // Adicionando os eventos e funcionalidades na inicialização
 function init() {
